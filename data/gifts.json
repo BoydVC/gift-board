@@ -1,0 +1,206 @@
+{
+  "title": "Family Gift Board",
+  "version": 1,
+  "note": "EXAMPLE gift ideas only — not purchases. Favor Apple-compatible gadgets; skip Samsung/Galaxy-only. Amounts are demo placeholders.",
+  "people": [
+    {
+      "id": "kidb",
+      "name": "Kid B (Kid B)",
+      "role": "Daughter",
+      "emoji": "🎀",
+      "color": "#f9a8d4",
+      "occasion": "Birthday",
+      "date": "February 12",
+      "born": "2013-01-01",
+      "bornLabel": "born Jan 1, 2013",
+      "notes": "KS · U14G Charlie (Copa) · independent homework"
+    },
+    {
+      "id": "kida",
+      "name": "Kid A (Kid A)",
+      "role": "Son",
+      "emoji": "⚾",
+      "color": "#93c5fd",
+      "occasion": "Birthday",
+      "date": "June 23",
+      "born": "2015-01-01",
+      "bornLabel": "born Jan 1, 2015",
+      "notes": "Bravo 11u Blue baseball · Team Alpha 12U soccer"
+    },
+    {
+      "id": "parentb",
+      "name": "Parent B (Randi)",
+      "role": "Wife",
+      "emoji": "💍",
+      "color": "#c4b5fd",
+      "occasion": "Anniversary",
+      "date": "June 19",
+      "born": null,
+      "bornLabel": "married Jan 1, 2000",
+      "notes": "Owns school & hair book · anniversary with Parent A"
+    },
+    {
+      "id": "grandparents-cd",
+      "name": "Grandparents C & D",
+      "role": "Parent A's parents (grandparents)",
+      "emoji": "⚓",
+      "color": "#6ee7b7",
+      "occasion": "Holidays / thank-you",
+      "date": "Dec / anytime",
+      "born": null,
+      "bornLabel": "live aboard much of the year; stay ~Jun–Sep/Oct",
+      "notes": "Boat life · help with kids coverage when ashore"
+    },
+    {
+      "id": "grandparente",
+      "name": "Grandparent E",
+      "role": "Parent B's mom (grandmother)",
+      "emoji": "🌸",
+      "color": "#fcd34d",
+      "occasion": "Holidays / thank-you",
+      "date": "Dec / anytime",
+      "born": null,
+      "bornLabel": "school pickup 1–2 days/week",
+      "notes": "Often helps with Kid B & Kid A coverage"
+    }
+  ],
+  "ideas": [
+    {
+      "id": "kidb-airpods",
+      "personId": "kidb",
+      "label": "AirPods (or AirPods Pro)",
+      "category": "Tech",
+      "approx": 179,
+      "apple": true,
+      "example": true,
+      "note": "EXAMPLE — Apple-compatible audio for practices / homework"
+    },
+    {
+      "id": "kidb-charlie",
+      "personId": "kidb",
+      "label": "Charlie / soccer gear refresh",
+      "category": "Sports",
+      "approx": 65,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — cleats, bag, or team-safe accessories"
+    },
+    {
+      "id": "kidb-journal",
+      "personId": "kidb",
+      "label": "Nice journal + gel pens",
+      "category": "Creative",
+      "approx": 28,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — she has phenomenal handwriting"
+    },
+    {
+      "id": "kida-airtag",
+      "personId": "kida",
+      "label": "AirTag for bat bag / backpack",
+      "category": "Tech",
+      "approx": 29,
+      "apple": true,
+      "example": true,
+      "note": "EXAMPLE — Find My friendly; Apple ecosystem"
+    },
+    {
+      "id": "kida-baseball",
+      "personId": "kida",
+      "label": "Bravo baseball glove oil + soft-toss kit",
+      "category": "Sports",
+      "approx": 45,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — Blue baseball season gear"
+    },
+    {
+      "id": "kida-alpha",
+      "personId": "kida",
+      "label": "Team Alpha scarf / team merch",
+      "category": "Sports",
+      "approx": 35,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — soccer season spirit"
+    },
+    {
+      "id": "mir-spa",
+      "personId": "parentb",
+      "label": "Spa / day-off voucher (local)",
+      "category": "Experience",
+      "approx": 120,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — anniversary-adjacent treat"
+    },
+    {
+      "id": "mir-airpods-max",
+      "personId": "parentb",
+      "label": "AirPods Max or quieter AirPods Pro",
+      "category": "Tech",
+      "approx": 249,
+      "apple": true,
+      "example": true,
+      "note": "EXAMPLE — Apple-compatible; skip Galaxy Buds"
+    },
+    {
+      "id": "mir-dinner",
+      "personId": "parentb",
+      "label": "Anniversary dinner reservation night",
+      "category": "Experience",
+      "approx": 150,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — Jan 1 anniversary (married 2000)"
+    },
+    {
+      "id": "cb-boat",
+      "personId": "grandparents-cd",
+      "label": "Boat galley upgrade / insulated tumblers",
+      "category": "Home",
+      "approx": 80,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — live-aboard friendly"
+    },
+    {
+      "id": "cb-photo",
+      "personId": "grandparents-cd",
+      "label": "Printed Kid B & Kid A photo book",
+      "category": "Sentimental",
+      "approx": 55,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — grandparents ashore season gift"
+    },
+    {
+      "id": "mel-tea",
+      "personId": "grandparente",
+      "label": "Tea / cozy throw set",
+      "category": "Home",
+      "approx": 40,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — thank-you for school pickups"
+    },
+    {
+      "id": "mel-garden",
+      "personId": "grandparente",
+      "label": "Spring bulb assortment (zone 7b)",
+      "category": "Garden",
+      "approx": 32,
+      "apple": false,
+      "example": true,
+      "note": "EXAMPLE — plant-by-Thanksgiving kit"
+    }
+  ],
+  "budgetDefaults": {
+    "kidb": 200,
+    "kida": 180,
+    "parentb": 300,
+    "grandparents-cd": 150,
+    "grandparente": 100
+  }
+}

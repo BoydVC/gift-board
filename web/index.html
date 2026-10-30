@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gift Board · Family</title>
+<meta name="theme-color" content="#fdf2f8">
+<meta name="description" content="Family gift idea board for Kid B, Kid A, Parent B, and grandparents — EXAMPLE ideas only. Apple-compatible skew. TokenMax burn build.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<header class="top no-print">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="44" height="44">
+        <defs>
+          <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f9a8d4"/>
+            <stop offset="1" stop-color="#fcd34d"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="16" width="32" height="24" rx="6" fill="#fff" stroke="url(#gg)" stroke-width="2.4"/>
+        <path d="M8 24h32M24 16v24" stroke="#f472b6" stroke-width="2.2"/>
+        <path d="M18 16c0-4 3-7 6-7s6 3 6 7" fill="none" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Gift Board</h1>
+      <p class="tag">family · EXAMPLE ideas · Apple-friendly gadgets</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill soft" id="peoplePill">5 people</span>
+    <span class="pill warm" id="budgetPill">Budget demo</span>
+  </div>
+</header>
+
+<nav class="tabs no-print" role="tablist" aria-label="Gift screens">
+  <button class="tab active" data-view="people" role="tab" aria-selected="true">👥 People</button>
+  <button class="tab" data-view="ideas" role="tab" aria-selected="false">💡 Ideas</button>
+  <button class="tab" data-view="budget" role="tab" aria-selected="false">💵 Budget</button>
+  <button class="tab" data-view="bought" role="tab" aria-selected="false">🎁 Bought</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<main>
+  <section id="view-people" class="view active" role="tabpanel">
+    <div class="hero panel wrap-panel">
+      <p class="eyebrow">Family occasions</p>
+      <h2 class="view-title">Who we're shopping for</h2>
+      <p class="lede">Birthdays and anniversary from known family facts. Gift ideas below are <span class="ex-label">EXAMPLE</span> only — not purchases.</p>
+    </div>
+    <div id="peopleRoot" class="people-grid"></div>
+  </section>
+
+  <section id="view-ideas" class="view" role="tabpanel">
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2 class="view-title">Gift ideas</h2>
+          <p class="lede">Filter by person. Status: idea → shortlist → bought. Tech skew favors Apple-compatible (AirPods, AirTag); skip Samsung/Galaxy-only.</p>
+        </div>
+        <select id="filterPerson" class="filter-select" aria-label="Filter by person">
+          <option value="">All people</option>
+        </select>
+      </div>
+      <div id="ideasRoot" class="ideas-list"></div>
+    </div>
+  </section>
+
+  <section id="view-budget" class="view" role="tabpanel">
+    <div class="panel wrap-panel">
+      <h2 class="view-title">Budget tracker</h2>
+      <p class="lede"><span class="ex-label">EXAMPLE</span> caps and spend — edit amounts; saved in localStorage. Not linked to any bank.</p>
+      <div id="budgetRoot" class="budget-list"></div>
+      <div class="budget-total" id="budgetTotal"></div>
+    </div>
+  </section>
+
+  <section id="view-bought" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Bought / shortlist</h2>
+      <p class="lede">Items marked shortlist or bought. Demo statuses only.</p>
+      <div id="boughtRoot" class="ideas-list"></div>
+    </div>
+  </section>
+
+  <section id="view-about" class="view" role="tabpanel">
+    <div class="about-wrap">
+      <div class="panel">
+        <h2 class="view-title">About Gift Board</h2>
+        <p class="lede">Family gift idea board for <strong>Kid B</strong> (birthday Jan 1), <strong>Kid A</strong> (Jan 1), <strong>Parent B</strong> (anniversary Jan 1, 2000), and grandparents <strong>Grandparent C/Grandparent D</strong> &amp; <strong>Grandparent E</strong>.</p>
+        <ul class="about-list">
+          <li>All ideas labeled <strong class="ex-label">EXAMPLE</strong>.</li>
+          <li>Gadgets favor Apple-compatible; no Samsung/Galaxy-only picks.</li>
+          <li>Budget &amp; status live in <code>localStorage</code>.</li>
+          <li>Ages not invented beyond known birth years (Kid B 2013, Kid A 2015).</li>
+        </ul>
+        <div class="about-actions no-print">
+          <button type="button" class="btn ghost" id="btnExport">Export save JSON</button>
+          <button type="button" class="btn ghost danger" id="btnReset">Reset statuses &amp; budgets</button>
+        </div>
+        <p class="hint" id="aboutHint"></p>
+      </div>
+      <div class="panel soft-panel">
+        <h3>Hash routes</h3>
+        <p class="mono">#people · #ideas · #budget · #bought · #about</p>
+        <h3>TokenMax</h3>
+        <p class="hint">Offline single-file burn build · port 4324</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot no-print">
+  <span>Parent A · Hometown · gift wrap demo</span>
+  <span id="footStat"></span>
+</footer>
+
+<script>
+window.__GIFTS__ = /*__GIFTS__*/ null /*__/GIFTS__*/;
+</script>
+<script>/*__APP__*/</script>
+</body>
+</html>
